@@ -11,16 +11,6 @@ html, body {
   color: #dcdcdc;      /* default light text */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  animation: fadeIn 0.3s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 /* Container to center content and provide consistent width */
@@ -55,18 +45,6 @@ html, body {
   color: #f4b400; /* gold accent */
   font-weight: 600;
   font-size: 1.05rem;
-  cursor: pointer;
-  transition: transform 0.15s ease-in-out, color 0.2s ease;
-  text-decoration: none;
-}
-
-.brand:hover {
-  transform: scale(1.02);
-  color: #ffc500;
-}
-
-.brand:active {
-  transform: scale(0.98);
 }
 
 .brand.small {
@@ -89,17 +67,15 @@ html, body {
   text-decoration: none;
   font-weight: 500;
   padding: 6px 0;
-  transition: color 0.2s ease, transform 0.15s ease-in-out;
-  cursor: pointer;
 }
 
 .nav-links a:hover {
   color: #f4b400;
-  transform: scale(1.02);
 }
 
-.nav-links a:active {
-  transform: scale(0.98);
+/* indicate active page */
+.nav-links a.active {
+  color: #f4b400;
 }
 
 /* right side of navbar */
@@ -122,16 +98,10 @@ html, body {
   padding: 8px 12px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .icon-btn:hover {
   border-color: rgba(244,180,0,0.15);
-  transform: scale(1.02);
-}
-
-.icon-btn:active {
-  transform: scale(0.98);
 }
 
 .cta {
@@ -142,28 +112,80 @@ html, body {
   border: none;
   cursor: pointer;
   font-weight: 600;
-  transition: all 0.2s ease;
-  text-decoration: none;
   display: inline-block;
+  text-decoration: none;
+  text-align: center;
 }
 
 .cta:hover {
   opacity: 0.95;
-  transform: scale(1.02);
 }
 
-.cta:active {
-  transform: scale(0.98);
-}
-
-/* HERO - large dark area (empty for now) */
+/* HERO - keeps large dark space */
 .hero {
-  min-height: 420px; /* big black area like screenshot */
-  background: #040404; /* pure dark */
+  background: #040404;
   border-bottom: 2px solid rgba(196,146,0,0.08);
+  padding-top: 36px;
+  padding-bottom: 36px;
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+/* CALL-OUT box in the hero (rounded border box with subtle gradient) */
+.callout {
+  background: linear-gradient(180deg, rgba(196,146,0,0.08), rgba(0,0,0,0.2));
+  border: 1px solid rgba(196,146,0,0.18);
+  padding: 34px;
+  border-radius: 12px;
+  text-align: center;
+  color: #e6e6e6;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.callout h3 {
+  color: #f4b400;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.callout-sub {
+  color: #d0d0d0;
+  line-height: 1.7;
+  max-width: 820px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+/* STATS SECTION */
+.stats-section {
+  border-top: 2px solid rgba(196,146,0,0.06);
+  padding: 48px 0;
+  background: #060606;
+}
+
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.stat {
+  padding: 10px 18px;
+}
+
+.stat-number {
+  color: #f4b400;
+  font-weight: 700;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.stat-label {
+  color: #bfc3c8;
+  font-size: 0.98rem;
 }
 
 /* Footer */
@@ -270,6 +292,16 @@ html, body {
   }
 
   .hero {
-    min-height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .callout {
+    padding: 20px;
+  }
+
+  .stats-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
   }
 }

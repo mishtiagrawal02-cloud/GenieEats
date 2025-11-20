@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>GenieEats — Home</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/Home.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR (same as index) -->
   <header class="navbar">
     <div class="container nav-inner">
       <div class="brand">
@@ -19,10 +19,10 @@
       </div>
 
       <nav class="nav-links">
-        <a href="Home.html">Home</a>
+        <a href="Home.html" class="active">Home</a>
         <a href="Restaurants.html">Restaurants</a>
         <a href="About.html">About</a>
-        <a href="Contact.html">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
 
       <div class="nav-right">
@@ -33,12 +33,44 @@
     </div>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- HERO / CALL-TO-ACTION BOX -->
   <main class="hero">
-    <div class="hero-inner container"></div>
+    <div class="container">
+
+      <section class="callout">
+        <h3>Ready to Order?</h3>
+        <p class="callout-sub">Join thousands of satisfied customers who trust GenieEats for their daily meals.</p>
+        <div style="text-align:center; margin-top:16px;">
+          <a class="cta browse" href="Restaurants.html">Browse Restaurants</a>
+        </div>
+      </section>
+
+    </div>
   </main>
 
-  <!-- FOOTER -->
+  <!-- STATS ROW -->
+  <section class="stats-section">
+    <div class="container stats-row">
+      <div class="stat">
+        <div class="stat-number">500+</div>
+        <div class="stat-label">Restaurants</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">50K+</div>
+        <div class="stat-label">Happy Customers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">100K+</div>
+        <div class="stat-label">Orders Delivered</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">4.8★</div>
+        <div class="stat-label">Average Rating</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (same as index) -->
   <footer class="site-footer">
     <div class="container footer-top">
       <div class="footer-col brand-col">
@@ -54,6 +86,7 @@
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
+          <a href="Home.html" class="active">Home</a>
           <li><a href="About.html">About</a></li>
           <li><a href="Restaurants.html">Restaurants</a></li>
           <li><a href="contact.html">Contact</a></li>

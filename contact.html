@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QuickEats — Contact</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Use the same stylesheet used for about page -->
+  <link rel="stylesheet" href="css/Contact.css">
+</head>
+<body>
+
+  <!-- NAVBAR (same structure as About page - keep links consistent) -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="Home.html">
+        <svg class="logo-icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true">
+          <path fill="#f0b300" d="M5 3c0 0 3 2 6 2s6-2 6-2 2 3 2 6-2 6-2 6-3-2-6-2-6 2-6 2-2-3-2-6 2-6 2-6z"/>
+        </svg>
+        <span class="brand-text">QuickEats</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="Home.html">Home</a>
+        <a href="Restaurants.html">Restaurants</a>
+        <a href="About.html">About</a>
+        <a class="active" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="address">📍 123 Main St</div>
+        <button class="btn-outline">🛒 Cart</button>
+        <button class="btn-solid">Login</button>
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / title -->
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="lead">Have a question or feedback? We'd love to hear from you.</p>
+      </div>
+    </section>
+
+    <!-- Contact layout: left = form, right = contact info cards -->
+    <section class="container contact-area">
+      <!-- left: form card -->
+      <div class="card form-card">
+        <h2 class="card-title">Get in Touch</h2>
+
+        <form id="contactForm" class="contact-form" action="#" method="post" onsubmit="handleSubmit(event)">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="your.email@example.com" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Your message..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-solid full">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- right: stacked contact info -->
+      <div class="contact-cards">
+        <div class="card info-card">
+          <div class="info-left">✉️</div>
+          <div class="info-right">
+            <h3>Email</h3>
+            <p>support@quickeats.com<br>info@quickeats.com</p>
+          </div>
+        </div>
+
+        <div class="card info-card">
+          <div class="info-left">📞</div>
+          <div class="info-right">
+            <h3>Phone</h3>
+            <p>+1 (555) 123-4567<br>Mon–Fri, 8am–10pm</p>
+          </div>
+        </div>
+
+        <div class="card info-card">
+          <div class="info-left">📍</div>
+          <div class="info-right">
+            <h3>Office</h3>
+            <p>123 Food Street<br>Downtown, CA 90210<br>United States</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (same as About) -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <div class="brand-footer">
+          <svg class="logo-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+            <path fill="#f0b300" d="M5 3c0 0 3 2 6 2s6-2 6-2 2 3 2 6-2 6-2 6-3-2-6-2-6 2-6 2-2-3-2-6 2-6 2-6z"/>
+          </svg>
+          <span>QuickEats</span>
+        </div>
+        <p class="muted">Your favorite food delivered fast and fresh to your doorstep.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Company</h5>
+        <ul class="plain-list">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Restaurants</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Support</h5>
+        <ul class="plain-list">
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Follow Us</h5>
+        <div class="socials">🔵 🔷 📸</div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      © 2025 QuickEats. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Simple JS: mobile toggle + form submit -->
+  <script>
+    // mobile menu toggle (very simple)
+    (function() {
+      var btn = document.querySelector('.menu-toggle');
+      var nav = document.querySelector('.main-nav');
+      if (btn) {
+        btn.addEventListener('click', function() {
+          nav.style.display = (nav.style.display === 'block') ? '' : 'block';
+        });
+      }
+    })();
+
+    // simple (beginner-friendly) form handler
+    function handleSubmit(e) {
+      e.preventDefault();
+      // read form values
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      // very basic check
+      if (!name || !email || !message) {
+        alert('Please fill in name, email and message.');
+        return;
+      }
+
+      // In a real site you would send this to a server.
+      // For now show a friendly success message and reset.
+      alert('Thanks, ' + name + '! Your message was sent (demo).');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
