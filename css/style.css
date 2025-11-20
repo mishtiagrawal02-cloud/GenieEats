@@ -7,8 +7,8 @@
 html, body {
   height: 100%;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  background: #060606; /* page background (near-black) */
-  color: #dcdcdc;      /* default light text */
+  background: #060606; 
+  color: #dcdcdc;      
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   animation: fadeIn 0.3s ease-in-out;
@@ -23,7 +23,7 @@ html, body {
   }
 }
 
-/* Container to center content and provide consistent width */
+
 .container {
   max-width: 1100px;
   margin: 0 auto;
@@ -31,9 +31,9 @@ html, body {
   padding-right: 20px;
 }
 
-/* NAVBAR */
+
 .navbar {
-  border-bottom: 2px solid rgba(196, 146, 0, 0.12); /* subtle gold line */
+  border-bottom: 2px solid rgba(196, 146, 0, 0.12);
   background: #0b0b0b;
   position: sticky;
   top: 0;
@@ -47,12 +47,12 @@ html, body {
   height: 64px;
 }
 
-/* Brand (logo + name) */
+
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #f4b400; /* gold accent */
+  color: #f4b400; 
   font-weight: 600;
   font-size: 1.05rem;
   cursor: pointer;
@@ -73,12 +73,12 @@ html, body {
   font-size: 1rem;
 }
 
-/* Logo svg styling */
+
 .logo {
   display: block;
 }
 
-/* main nav links */
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -102,7 +102,7 @@ html, body {
   transform: scale(0.98);
 }
 
-/* right side of navbar */
+
 .nav-right {
   display: flex;
   align-items: center;
@@ -114,7 +114,7 @@ html, body {
   font-size: 0.95rem;
 }
 
-/* simple button styles */
+
 .icon-btn {
   border: 1px solid rgba(255,255,255,0.08);
   background: transparent;
@@ -156,23 +156,23 @@ html, body {
   transform: scale(0.98);
 }
 
-/* HERO - large dark area (empty for now) */
+
 .hero {
-  min-height: 420px; /* big black area like screenshot */
-  background: #040404; /* pure dark */
+  min-height: 420px; 
+  background: #040404; 
   border-bottom: 2px solid rgba(196,146,0,0.08);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Footer */
+
 .site-footer {
   margin-top: 30px;
   color: #cfcfcf;
 }
 
-/* Footer top row with columns */
+
 .footer-top {
   display: grid;
   grid-template-columns: 1fr repeat(3, 180px);
@@ -182,7 +182,7 @@ html, body {
   align-items: start;
 }
 
-/* Columns */
+
 .footer-col h4 {
   color: #f4b400;
   margin-bottom: 14px;
@@ -208,7 +208,7 @@ html, body {
   color: #f4b400;
 }
 
-/* Brand column text */
+
 .brand-col .muted {
   color: #9ea3a8;
   margin-top: 12px;
@@ -216,7 +216,7 @@ html, body {
   max-width: 320px;
 }
 
-/* Social icons (simple text icons) */
+
 .socials {
   display: flex;
   gap: 12px;
@@ -235,7 +235,7 @@ html, body {
   text-decoration: none;
 }
 
-/* Footer bottom area */
+
 .footer-bottom {
   padding-top: 18px;
   padding-bottom: 26px;
@@ -248,16 +248,16 @@ html, body {
   margin-bottom: 18px;
 }
 
-/* Copyright */
+
 .copyright {
   color: #9fa6ab;
   font-size: 0.95rem;
 }
 
-/* Small screens: stack the footer & nav adjustments */
+
 @media (max-width: 820px) {
   .nav-links {
-    display: none; /* keep simple for beginners; you can replace with a mobile menu */
+    display: none; 
   }
 
   .footer-top {

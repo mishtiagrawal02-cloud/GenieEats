@@ -1,4 +1,4 @@
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ body {
   margin: auto;
 }
 
-/* NAVBAR */
+
 .navbar {
   background: #000;
   border-bottom: 1px solid #2e2e2e;
@@ -83,7 +83,7 @@ body {
   display: none;
 }
 
-/* HERO SECTION */
+
 .hero {
   text-align: center;
   margin: 50px 0 30px 0;
@@ -101,7 +101,7 @@ body {
   margin: auto;
 }
 
-/* COMMON CARD STYLE */
+
 .card {
   background: #1b1b1b;
   border: 1px solid #3e3e3e;
@@ -110,13 +110,13 @@ body {
   margin-bottom: 25px;
 }
 
-/* OUR STORY CARD */
+
 .big-card h2 {
   color: #f4b400;
   margin-bottom: 12px;
 }
 
-/* TWO SMALL CARDS */
+
 .cards-grid {
   display: flex;
   gap: 20px;
@@ -144,7 +144,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* FEATURE SECTION */
+
 .features {
   margin-top: 40px;
 }
@@ -185,7 +185,7 @@ body {
   
 }
 
-/* FOOTER */
+
 .site-footer {
   margin-top: 60px;
   padding: 40px 0;
@@ -235,7 +235,7 @@ body {
   font-size: 14px;
 }
 
-/* RESPONSIVE DESIGN */
+
 @media (max-width: 900px) {
   .cards-grid,
   .features,
