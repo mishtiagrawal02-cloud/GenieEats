@@ -232,7 +232,7 @@ html, body {
   margin-bottom: 18px;
 }
 .copyright { color: #9fa6ab; text-align: center; padding: 12px 0; }
-
+.socials { display: flex; gap: 12px; }
 
 @media (max-width: 980px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
