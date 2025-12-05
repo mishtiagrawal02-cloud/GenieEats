@@ -77,6 +77,11 @@ body {
   border: none;
   background: #f4b400;
   color: #000;
+  
+}
+.btn-solid a {
+  text-decoration: none;
+  color: #000;
 }
 
 .menu-toggle {
@@ -161,7 +166,7 @@ body {
   
 } */
 
-.hii{
+.featured{
   /* flex: 1; */
   background: #2a2a2a;
   border: 1px solid #3e3e3e;
@@ -255,7 +260,7 @@ body {
     color: #fff;
   }
 }
-.hi{
+/* .featured{
   display: flex;
   
-}
+} */

@@ -146,6 +146,10 @@ html, body {
   text-decoration: none;
   display: inline-block;
 }
+.cta a {
+  color: #0b0b0b;
+  text-decoration: none;
+}
 
 .cta:hover {
   opacity: 0.95;
